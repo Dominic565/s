@@ -24,3 +24,15 @@ Auth::routes();
 Route::get('/home', [
     HomeController::class, 'index'
 ])->name('home');
+
+
+Route::resource('products', App\Http\Controllers\ProductsController::class);
+
+
+Route::resource('services', App\Http\Controllers\ServicesController::class);
+
+
+Route::resource('pricings', App\Http\Controllers\PricingController::class);
+
+
+Route::resource('sales', App\Http\Controllers\SalesController::class);
